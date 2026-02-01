@@ -1,0 +1,22 @@
+Jack is always excited about sunday. It is favourite day, when he gets to play all day.
+And goes to cycling with his friends. So every time when the months starts he counts the number of sundays he will get to enjoy.
+Considering the month can start with any day, be it Sunday, Monday…. Or so on.
+
+Count the number of Sunday jack will get within n number of days.
+
+Solution:
+
+weekday = {"Mon":6,"Tue":5,"Wed":4,"Thu":3,"Fri":2,"Sat":1,"Sunday":7}
+start_day = input("Enter the weekday: ")
+no_days = int(input("Enter the no of days: "))
+tot_sun = 1
+no_days = no_days - weekday[start_day]
+while no_days :
+    if no_days - weekday[start_day] <= 0:
+        break
+    
+    no_days = no_days - weekday["Sunday"]
+    tot_sun+=1
+    
+print("Total Sunday to enjoy !",tot_sun)
+    
